@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.create a function that takes two numbers as arguments and return
+        //     function add(x,y){
+        //         return x+y;
+        // }
+        // console.log(add(2,3))
+
+        //2.Write a function that takes an integer minutes and converts it to seconds.
+        // function convert(minutes){
+        //     return minutes*60;
+        // }
+        // console.log(convert(2))
+
+        //3.Create a function that takes a number as an argument, increments the number by +1 and returns the result
+        // function increments(number){
+        //     return number+=1;
+        // }
+        // console.log(increments(10));
+
+        //4.Create a function that takes the age in years and returns the age in days.
+        // function coversionofage(){
+        //     var age = 20;
+        //     return age*365;
+        // }
+        // console.log(coversionofage());
+
+        //5.Create a function that takes voltage and current and returns the calculated power.
+        // function calculatedpower(){
+        //     const voltage=20
+        //     const current = 20
+        //     return 20*20
+        // }
+        // console.log(calculatedpower());
+
+        //6.Write a function that returns the string "something" joined with a space " " and the given argument a.
+        // function returnstring() {
+        //         var string = "something"
+        //         var argument = "a"
+        //         console.log(string + " " + argument);
+        // }
+        // returnstring()
+
+        //7.Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+
+        // function returnstate(a,b){
+        //         if(a==10 || b==10 || a+b==10){
+
+        //           return console.log(true)
+        //         }
+        //         else{
+
+        //            return  console.log(false)
+        //         }
+
+        //     }
+        //     returnstate(4,1)
+
+        //8.Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+        // var string1 = "himam";
+        // var string2 = "basha";
+        // function returnstate(string1, string2) {
+        //     if (string1.length == string2.length) {
+        //         return console.log(true)
+        //     } else {
+        //         return console.log(false)
+        //     }
+        // }
+        // returnstate(string1, string2)
+
+        //9.Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+        // var arrfunction = (himam) => "hi himam!";
+        // console.log(arrfunction);
+
+        //10.Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
+        //     var numbers = [0,1,2,3,4,5,6,7,8,9]
+        //     function createPhoneNumber(numbers) {
+        //         let firstpart = ""
+        //         let secondpart = ""
+        //         let thirdpart = ""
+        //         for (var i = 0; i < numbers.length; i++) {
+        //             if (i < 3) {
+        //                 firstpart += numbers[i].toString()
+        //             } else if (i >= 3 && i < 6) {
+        //                 secondpart += numbers[i].toString()
+        //             } else if (i >= 6) {
+        //                 thirdpart += numbers[i].toString()
+        //             }
+        //         }
+        // return `(${firstpart}) ${secondpart}-${thirdpart}`
+        //     }
+        //     console.log(createPhoneNumber(numbers))
+
+        // 11.array of strings sorted by length  in ascending order
+        // var sortByLength = ["a", "ccc", "dddd", "bb"]
+        // function ascendingOrederArray() {
+        //     return sortByLength.sort((a, b) =>  a.length - b.length )
+        // }
+        // console.log(ascendingOrederArray());
+
+        //12. return the largest numbers from each array to single array [7,90,2]
+        // var myArray = [[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]
+        // var singleArray = []
+        // function arrayOfarray(myArray) {
+        //     myArray.forEach((array) => {
+        //         singleArray.push(Math.max(...array))
+
+        //     })
+        //     return singleArray
+        // }
+        // console.log(arrayOfarray(myArray));
+
+        // 13.return the second largest number from array
+        // var myArray = [10, 40, 30, 20, 50]
+        // var firstNumber = myArray[0]
+        // var secondNumber = myArray[0]
+        // function returnSecondlargestNumber() {
+        //     myArray.forEach(array => {
+        //         if (array > firstNumber) {
+        //             secondNumber = firstNumber
+        //             firstNumber = array;
+        //         } else if (array > secondNumber && array != firstNumber) {
+        //             secondNumber = array
+        //         }
+        //     })
+        //     return secondNumber
+        // }
+        // console.log(returnSecondlargestNumber());
+
+        // 14. remove duplicates from array
+        // var array = [1,0,1,0]
+        // var newarray = [...new Set(array)]
+
+        //     console.log(newarray)
+
+        // 15.unique value in array <!----------doubt--------------------------------------->
+
+        // 16.char count in an array od strings
+        // var ar = ["c", "Chamber of secrets"], o = {}
+        // ar.forEach(w => w.split('').forEach(e => o[e] = (o[e] || 0) + 1));
+        // console.log(o)
+
+        // 17.find the count of vowels in the string
+        // var vowels = ["a", "e", "i", "o", "u"]
+        // var string = "celebration"
+        // var count = 0
+        // function countString(){
+        //     vowels.forEach((ele)=>{
+        //         for(a in string){
+        //             if(string[a]==ele){
+        //                 count+=1
+        //             }
+        //     }
+        //     })
+        //     return count
+        // }
+
+        // console.log(countString());
+
+        // 18.upper to lowercase and viceversa  [it can be done in replace method]
+        // var mystring = "Happy Birthday"
+        // var updatedstring = mystring.replace("Happy Birthday","hAPPY bIRTHDAY")
+        // console.log(updatedstring);
+
+        // 19.function that takes one integer parameter, and multiply with 2 in every integer
+        // var myArray = [1, 2, 3, 4, 5]
+        // var multipliedArray=[]
+        // function multipliedArrayby2() {
+        //     myArray.forEach((element) => {
+
+        //         multipliedArray.push(element * 2)
+        //     })
+        //     console.log(multipliedArray)
+        // }
+        // multipliedArrayby2()
+
+        //20.Function that will take one parameter and return type of the data
+        // var mydatatype = "500"
+        // console.log(typeof(mydatatype));
+
+        // 21.find greatest of three numbers(using ternery operator)
+        // var n1= 100;
+        // var n2= 12 ;
+        // var n3 = 20;
+
+        // var greatest = n1 > n2 ? (n1 > n3 ? n1 : n3) : (n2 > n3 ? n2 : n3)
+        // console.log(greatest);
+
+        // 22.Program to find factorial of number
+        // var number = 5
+        // var factorial = number;
+
+        //     for(var i = 1;i < number ; i++){
+        //         factorial = factorial * (number - i);
+
+        //     }
+        //     console.log(factorial);
+
+        // 23. Program to arrange numbers in ascending order
+        // var myArray = [5,10,3,13,2]
+        // for(var i = 0;i < myArray.length;i++){
+        //     for(var j = i+1;j < myArray.length; j++){
+        //         if(myArray[i] > myArray[j]){
+        //             var temp = myArray[i]
+        //             myArray[i] = myArray[j]
+        //             myArray[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(myArray)
+
+        //24.print loop using loop
+        // var row = 5;
+        // var string = ""
+        // for(var i = 1; i <= row; i++){
+        //     for(var j = 1;j <= i ; j++){
+        //        string += i
+        //     }
+        //    string += "\n"
+        // }
+        // console.log(string)
+
+        // 25.Program to Calculate the Power of a Number
+
+        // var multiply = 5
+        // var power = 3;
+        // var result = 5;
+        // for (var i = 1; i < power; i++) {
+        //     result = result * multiply
+        // }
+        // console.log(result)
+
+        // 26. Program to Check Whether a Number is Prime or Not
+        // var number;
+        //     function isPrime(num){
+        //         if(num > 1 && num % 2 == 1){
+        //             console.log(num ," is s prime number");
+        //         }else{
+        //             console.log("it is not a prime number");
+        //         }
+        //     }
+        //     isPrime(7)
+
+        // 27.find LCM of two numbers using while loop
+        // const number1 = 25;
+        // const number2 = 12;
+        // for (let i = 1; i <= number1 && i <= number2; i++) {
+
+        //     if (number1 % i == 0 && number2 % i == 0) {
+        //         var hcf = i;
+        //     }
+        // }
+        // let lcm = (number1 * number2) / hcf;
+
+        // console.log(`HCF of ${number1} and ${number2} is ${lcm}.`);
+
+        // 28. Display Characters from A to Z Using Loop with count
+        // var i
+        // for (i = 65 ; i <= 90 ; i++){
+        //     var count = i
+        //     console.log(String.fromCharCode(i) + " " + count)
+        // }
+
+        // 29.find a missing number
+        // var a = [5,4,3],
+        //     count = 5;
+        // var missing = new Array();
+
+        // for (var i = 1; i <= count; i++) {
+        //     if (a.indexOf(i) == -1) {
+        //         missing.push(i);
+        //     }
+        // }
+        // console.log(missing);
+
+        // <!----------Medium Section--------------------------------------->
+
+        // 1.  function that converts an object into an array, where each element represents a key-value pair in the form of an array.
+
+        // function convertToArray() {
+        //     var person = {
+        //         shrimp: 15,
+        //         tots: 12,
+        //         wickets: 5
+        //     }
+        //     var person2 = { a: 1, b: 2, c: 3 }
+
+        //     console.log(Object.entries(person))
+        //     console.log(Object.entries(person2))
+        // }
+        // convertToArray()
+
+        // 2.function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length
+
+        // var result = []
+        // function MultiplesNum(number, length) {
+
+        //     for (var i = 1; i <= length; i++) {
+        //         result.push(number * i);
+        //     }
+        //     return result;
+        // }
+        // console.log(MultiplesNum(7, 5));
+
+        //    3. function that takes an array with objects and returns the sum of people's budgets.
+        // var user = [
+        //     { name: "John", age: 21, budget: 23000 },
+        //     { name: "Steve", age: 32, budget: 40000 },
+        //     { name: "Martin", age: 16, budget: 2700 }
+        // ]
+        //    var users= user.reduce((total,initial)=>
+        //          total + initial.budget ,0
+        //    )
+        //     console.log(users);
+
+        // 4. find the average of notes in array of objects
+
+        // function averageNotes(students) {
+        //     return students.map(student => {
+        //         const avgNote = student.notes.reduce((sum, note) => sum + note, 0) / student.notes.length;
+        //         return { name: student.name, avgNote: avgNote };
+        //     });
+        // }
+        // console.log(averageNotes([{ name: "John", notes: [3, 5, 4] }]));
+
+
+        // 5.function that moves all capital letters to the front of a word
+
+
+        // function moveCapitals(word) {
+        //     let capitals = "";
+        //     let rest = "";
+        //     for (let char of word) {
+        //         if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+        //             capitals += char;
+        //         } else {
+        //             rest += char;
+        //         }
+        //     }
+        //     return capitals + rest;
+        // }
+        // console.log(moveCapitals("hAPPy"));
+
+
+
+        // 6.Count each occurrence of number
+        // function countEachOccurrence(arr) {
+        //     const result = {};
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (result[arr[i]]) {
+        //             result[arr[i]]++;
+        //         } else {
+        //             result[arr[i]] = 1;
+        //         }
+        //     }
+        //     return result;
+        // }
+
+        // const numbers = [1, 6, 3, 1, 5, 9, 7, 2, 1, 9, 3, 7, 8, 9, 10];
+        // console.log(countEachOccurrence(numbers));
+
+
+        // 7.return the longest string in array of strings
+        // var myLongString = (array) => {
+        //     let longestString = "";
+        //     for (let i = 0; i < array.length; i++) {
+        //         if (array[i].length > longestString.length) {
+        //             longestString = array[i];
+        //         }
+        //     }
+        //     return longestString;
+        // }
+        // const myArray = ['nik', 'mikhil', 'Cow', 'Elephant']
+        // console.log(myLongString(myArray));
+
+        // 8.Write Program to remove duplicate elements in an array and sort it in descending order(can not use predefined function).
+
+        // function removeDuplicates(arr) {
+        //     const result = [];
+        //     for (let i = 0; i < arr.length; i++) {
+        //         let isDuplicate = false;
+        //         for (let j = 0; j < result.length; j++) {
+        //             if (arr[i] === result[j]) {
+        //                 isDuplicate = true;
+        //                 break;
+        //             }
+        //         }
+        //         if (!isDuplicate) {
+        //             result.push(arr[i]);
+        //         }
+        //     }
+
+        //     for (let i = 0; i < result.length; i++) {
+        //         for (let j = i + 1; j < result.length; j++) {
+        //             if (result[i] < result[j]) {
+        //                 let temp = result[i]
+        //                 result[i] = result[j]
+        //                 result[j] = temp
+
+        //             }
+        //         }
+        //     }
+        //     return result;
+        // }
+
+        // const numbers = [1, 6, 3, 1, 5, 9, 7, 2, 1, 9, 3, 7, 8, 9, 10];
+        // console.log(removeDuplicates(numbers));
+
+
+
+        // intersection  the 2 arrays
+
+        //         var arr1 = [6, 9, 4]
+        //         var arr2 = [7, 7, 8, 6, 6, 9, 4, 4, 9]
+        //         var arr3 = []
+        //         for (let i = 0; i < arr1.length; i++) {
+        //             for (let j = 0; j < arr2.length; j++) {
+        //                 if (arr1[i] == arr2[j]) {
+        //                     if (arr3.length == 0) {
+        //                         arr3.push(arr2[j])
+        //                     }
+        //                     else {
+        //                         if (arr3[i] != arr2[j]) {
+        //                             arr3.push(arr2[j])
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+
+        //         console.log(arr3);
+        // var arr = [1, 3, 10, 6]
+        // function reverstring() {
+
+        //     for (let i = 0; i < arr.length; i++) {
+        //         for (let j = i + 1; j < arr.length; j++) {
+        //             if (arr[i] > arr[j]) {
+        //                 let temp = arr[i]
+        //                 arr[i] = arr[j]
+        //                 arr[j] = temp
+        //                 console.log(arr);
+        //             }
+        //         }
+
+        //     }
+        // }
+        // reverstring()
+
+        var str = "arjithmeshra";
+        // var array = ["a","e","i","o","u"]
+        var sortedstr = "";
+
+        var myfunction = () => {
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] != "a" || "e" || "i" || "o" || "u") {
+                    sortedstr += str[i];
+                }
+            }
+            return sortedstr;
+        };
+        console.log(myfunction());
+
+
+    </script>
+</body>
+
+</html>
